@@ -13,7 +13,7 @@
 
 		<!-- New Task Form -->
 		<form action="{{ url('task')  }}" method="POST" class="form-horizontal">
-		    {{ csrf_field() }}
+            @csrf
 
 		    <!-- Task Name  -->
 		    <div class="form-group">
