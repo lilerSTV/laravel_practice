@@ -14,12 +14,12 @@
                         <td>{{ $reservation->room_name}}</td>
                         </tr>
                         <tr>
-                            <th>部屋の種類</th>
-                        <td>{{ $reservation->room_name}}</td>
+                            <th>チェックイン</th>
+                        <td>{{ $reservation->checkin}}</td>
                         </tr>
                         <tr>
-                            <th>部屋の種類</th>
-                        <td>{{ $reservation->room_name}}</td>
+                            <th>チェックアウト</th>
+                        <td>{{ $reservation->checkout}}</td>
                         </tr>
                         <tr>
                             <th>作成日</th>

@@ -16,7 +16,8 @@
                             <tr>
                                 <th>ID</th>
                                 <th>部屋</th>
-                                <th>日付</th>
+                                <th>チェックイン</th>
+                                <th>チェックアウト</th>
                             </tr>
                         </thead>
                         @foreach ($reservations as $reservation)

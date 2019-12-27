@@ -13,13 +13,26 @@
                         <div class="form-group row">
                             <label for="inputTitle" class="col-sm-2 col-form-label">部屋の種類</label>
                                 <div class="col-sm-10">
-                                  <input type="text" name="room_id" class="form-control" id="room_name">
+                                  <select id="room_name" name="room_name" class="form-control">
+                                        <option>桜の間</option>
+                                        <option>松の間</option>
+                                        <option>竹の間</option>
+                                        <option>梅の間</option>
+                                      </select>
                                 </div>
                         </div>
                         <div class="form-group row">
                             <label for="inputUrl" class="col-sm-2 col-form-label">日付</label>
                                 <div class="col-sm-10">
-                                  <input type="text" name="date" class="form-control" id="checkin">
+                                    <input type="date" name="start_date" class="form-control" value="2018-10-01" id="checkin">
+                                    <input type="time" name="start_time" class="form-control" value="19:00" id="checkin">
+                                </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputUrl" class="col-sm-2 col-form-label">日付</label>
+                                <div class="col-sm-10">
+                                    <input type="date" name="end_date" class="form-control" value="2018-10-01" id="checkin">
+                                    <input type="time" name="end_time" class="form-control" value="23:00" id="checkin">
                                 </div>
                         </div>
 
