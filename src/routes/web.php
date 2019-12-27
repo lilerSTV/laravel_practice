@@ -24,4 +24,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('reservations', 'ReservationController@index');
-Route::get('reservations/{id}', 'ReservationController@show')->where('id', '[0-9]+');
+Route::get('reservations/{reservation}', 'ReservationController@show')->name('reservations.show');

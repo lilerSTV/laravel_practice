@@ -19,7 +19,7 @@
                         @foreach ($reservations as $reservation)
                             <th>
                             <td>{{ $reservation->id }}</td>
-                            <td><a href="/reservations/{{$reservation->id}}">{{ $reservation->room_name }}</a></td>
+                            <td><a href="{{ route('reservations.show', $reservation->id) }}">{{ $reservation->room_name }}</a></td>
                             </th>
                         @endforeach
                     </table>
