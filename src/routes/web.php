@@ -23,5 +23,4 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 
-Route::get('reservations', 'ReservationController@index');
-Route::get('reservations/{reservation}', 'ReservationController@show')->name('reservations.show');
+Route::resource('reservations', 'ReservationController');

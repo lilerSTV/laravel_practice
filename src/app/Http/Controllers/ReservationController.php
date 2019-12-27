@@ -26,7 +26,7 @@ class ReservationController extends Controller
      */
     public function create()
     {
-        //return view('reservations.create');
+        return view('reservations.create');
         //
     }
 
@@ -38,6 +38,9 @@ class ReservationController extends Controller
      */
     public function store(Request $request)
     {
+        Reservation::create($request->all());
+
+        return redirect()->route('reservations.index');
         //
     }
 
@@ -49,10 +52,7 @@ class ReservationController extends Controller
      */
     public function show(Reservation $reservation)
     {
-
-
-        return view('reservations.show', compact($reservation));
-        //
+        return view('reservations.create');
     }
 
     /**
