@@ -12,14 +12,12 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>部屋の種類</th>
-                                <th>チェックイン</th>
-                                <th>チェックアウト</th>
+                                <th>部屋</th>
+                                <th>日付</th>
                             </tr>
                         </thead>
 
                     </table>
-
                 </div>
             </div>
         </div>

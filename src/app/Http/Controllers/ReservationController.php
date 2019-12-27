@@ -15,8 +15,7 @@ class ReservationController extends Controller
     public function index()
     {
         $reservations = Reservation::all();
-        return view('reservations.index', ['reservations'=> $reservations]);
-
+        return view('reservations.index', ['reservations' => $reservations]);
         //
     }
 
