@@ -47,8 +47,10 @@ class ReservationController extends Controller
      * @param  \App\Models\Reservation  $reservation
      * @return \Illuminate\Http\Response
      */
-    public function show(Reservation $reservation)
+    public function show($id)
     {
+        $reservation = Reservation::findOrFail($id);
+
         return view('reservations.show', compact($reservation));
         //
     }
